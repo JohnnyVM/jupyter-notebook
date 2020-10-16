@@ -7,9 +7,9 @@ LABEL description="Jupyter notebook"
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
 RUN apt-get update \
         && apt-get install -y --no-install-recommends \
-            curl \
-            python3-pip \
-            python3-dev \
+			curl \
+			python3-pip \
+			python3-dev \
 			vim \
 			less \
         && rm -rf /var/lib/apt/lists/*
